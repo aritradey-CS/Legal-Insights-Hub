@@ -1,0 +1,4 @@
+# Moist
+This responsive web project combines smooth scrolling, video backgrounds, and canvas animations. It offers an engaging user experience, blending stylish fonts and modern design elements for a visually appealing and interactive webpage.
+A responsive web page with multiple sections. It utilizes the Locomotive Scroll library for smooth scrolling effects. The first section features a video background, navigation bar, and a call-to-action button. The second section presents textual content with styled fonts. The third section uses a canvas element for animations triggered by scrolling. Overall, the code combines various web technologies to create an engaging and visually appealing webpage.
+![image](https://github.com/aritradey-CS/Moist/assets/81703791/fb7e8dba-ea69-45e0-bcdc-6139682e31d9)
