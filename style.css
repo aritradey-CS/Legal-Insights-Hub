@@ -317,11 +317,11 @@ color:rgba(240, 255, 255, 0.5);
 
 #page7-exploreButton {
   position: absolute;
-  bottom: 20px; /* Adjust this value to position the arrow and text vertically */
+  bottom: 10px; /* Adjust this value to position the arrow and text vertically */
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px; /* Adjust the font size as needed */
-  color: #000000; /* Text color */
+  color: white; /* Text color */
   text-align: center;
   z-index: 2; /* Ensure it's above the canvas */
   cursor: pointer; /* Add a pointer cursor on hover */

@@ -626,11 +626,24 @@ gsap.to(".page7-cir", {
     trigger: ".page7-cir",
     start: "top center",
     end: "bottom top",
-    markers: true,
+    // markers: true,
     scroller: "#main",
     scrub: .5,
   },
-  scale:1.5
+  scale:1.5   
+  // opacity: 0, // Example: Animate opacity to 0
+});
+
+gsap.to(".page7-cir-inner", {
+  scrollTrigger: {
+    trigger: ".page7-cir-inner",
+    start: "top center",
+    end: "bottom top",
+    // markers: true,
+    scroller: "#main",
+    scrub: .5,
+  },
+  backgroundColor : `rgba(255, 255, 255, 0.226)`,
   // opacity: 0, // Example: Animate opacity to 0
 });
 
@@ -644,25 +657,24 @@ gsap.to(".page7-cir", {
 
 
 
+var clutter = "";
+document
+  .querySelector("#page8>h3")
+  .textContent.split(" ")
+  .forEach(function (dets) {
+    clutter += `<span> ${dets} </span>`;
+    document.querySelector("#page8>h3").innerHTML = clutter;
+  });
 
-// var clutter = "";
-// document
-//   .querySelector("#page8>h3")
-//   .textContent.split(" ")
-//   .forEach(function (dets) {
-//     clutter += `<span> ${dets} </span>`;
-//     document.querySelector("#page8>h3").innerHTML = clutter;
-//   });
-
-// gsap.to("#page8>h3>span", {
-//   ScrollTrigger: {
-//     trigger: `#page8>h3`,
-//     start: `top bottom`,
-//     end: `bottom top`,
-//     scroller: `#main`,
-//     scrub: 0.4,
-//   },
-//   stagger: 0.2,
-//   color: `white`,
-// });
+gsap.to("#page8>h3>span", {
+  ScrollTrigger: {
+    trigger: `#page8>h3`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: 0.4,
+  },
+  stagger: 0.2,
+  color: `white`,
+});
 
