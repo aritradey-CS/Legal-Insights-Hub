@@ -608,12 +608,12 @@ function canvas2() {
       centerShift_y,
       img.width * ratio,
       img.height * ratio
-      );
-    }
-    // Scroll-triggered pinning
-    ScrollTrigger.create({
-      trigger: "#page7",
-      pin: true,
+    );
+  }
+  // Scroll-triggered pinning
+  ScrollTrigger.create({
+    trigger: "#page7",
+    pin: true,
     start: "top top",
     end: "200% top",
     scroller: "#main",
@@ -628,9 +628,9 @@ gsap.to(".page7-cir", {
     end: "bottom top",
     // markers: true,
     scroller: "#main",
-    scrub: .5,
+    scrub: 0.5,
   },
-  scale:1.5   
+  scale: 1.5,
   // opacity: 0, // Example: Animate opacity to 0
 });
 
@@ -641,21 +641,11 @@ gsap.to(".page7-cir-inner", {
     end: "bottom top",
     // markers: true,
     scroller: "#main",
-    scrub: .5,
+    scrub: 0.5,
   },
-  backgroundColor : `rgba(255, 255, 255, 0.226)`,
+  backgroundColor: `rgba(255, 255, 255, 0.226)`,
   // opacity: 0, // Example: Animate opacity to 0
 });
-
-
-
-
-
-
-
-
-
-
 
 var clutter = "";
 document
@@ -677,4 +667,3 @@ gsap.to("#page8>h3>span", {
   stagger: 0.2,
   color: `white`,
 });
-
