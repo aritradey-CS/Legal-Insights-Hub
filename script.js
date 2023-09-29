@@ -39,6 +39,9 @@ function loco() {
 }
 
 loco();
+
+gsap.registerPlugin(ScrollTrigger);
+
 var clutter = "";
 document
   .querySelector("#page2>h2")
@@ -467,6 +470,78 @@ function canvas1() {
 }
 canvas1();
 
+// Define a variable to keep track of the current count
+let currentCount = 0;
+
+// Function to update the count element
+function updateCount(count) {
+  const number = document.getElementById("number");
+  number.innerHTML = count + "%";
+}
+
+// Use ScrollTrigger to trigger the counting and animation when #page7 enters the viewport
+gsap.registerPlugin(ScrollTrigger);
+
+// Define a timeline for the animation
+const animationTimeline = gsap.timeline({
+  paused: true, // Start paused
+  onUpdate: () => {
+    // Update the animation progress based on the scroll position
+    const scrollProgress = ScrollTrigger.getById("page7-progress").progress;
+    animationTimeline.progress(scrollProgress);
+  },
+});
+
+// Add an animation to set the stroke-dashoffset property to its final position
+animationTimeline.to("circle", {
+  strokeDashoffset: 165, // Set it to the final position
+  duration: 20, // Animation duration
+  ease: "linear",
+});
+
+// Create a ScrollTrigger to track the scroll progress
+ScrollTrigger.create({
+  id: "page7-progress", // Unique ID for this ScrollTrigger
+  trigger: "#page7", // The element that triggers the progress tracking
+  start: "top 80%",
+  end: "200% top",
+  scroller: "#main", // Adjust the start position as needed
+  onUpdate: (self) => {
+    // When scrolling, update the ScrollTrigger progress
+    const scrollProgress = self.progress;
+
+    // Calculate the target count based on scroll progress
+    const targetCount = Math.floor(scrollProgress * 65);
+
+    // Increment or decrement the current count accordingly
+    if (targetCount > currentCount) {
+      currentCount++;
+    } else if (targetCount < currentCount) {
+      currentCount--;
+    }
+
+    // Update the count element
+    updateCount(currentCount);
+
+    // Update the animation progress based on the scroll position
+    animationTimeline.progress(scrollProgress);
+  },
+});
+
+// Use ScrollTrigger to trigger the animation when #page7 enters the viewport
+ScrollTrigger.create({
+  trigger: "#page7", // The element that triggers the animation
+  start: "top 80%",
+  end: "200% top",
+  scroller: "#main", // Adjust the start position as needed
+  onEnter: () => {
+    animationTimeline.play(); // Play the animation when entering the trigger area
+  },
+  onLeaveBack: () => {
+    animationTimeline.reverse(); // Reverse the animation when leaving the trigger area
+  },
+});
+
 var clutter = "";
 document
   .querySelector("#page6>h3")
@@ -647,18 +722,20 @@ gsap.to(".page7-cir-inner", {
   // opacity: 0, // Example: Animate opacity to 0
 });
 
+gsap.registerPlugin(ScrollTrigger);
+
 var clutter = "";
 document
-  .querySelector("#page8>h3")
+  .querySelector("#page8>h1")
   .textContent.split(" ")
   .forEach(function (dets) {
     clutter += `<span> ${dets} </span>`;
-    document.querySelector("#page8>h3").innerHTML = clutter;
+    document.querySelector("#page8>h1").innerHTML = clutter;
   });
 
-gsap.to("#page8>h3>span", {
+gsap.to("#page8>h1>span", {
   ScrollTrigger: {
-    trigger: `#page8>h3`,
+    trigger: `#page8>h1`,
     start: `top bottom`,
     end: `bottom top`,
     scroller: `#main`,
