@@ -414,7 +414,7 @@ circle {
   stroke-width: 10px;
   stroke-dasharray: 502.65;
   stroke-dashoffset: 472;
-  
+  /* animation: prog 2s linear forwards; */
 }
 
 svg {
@@ -423,28 +423,43 @@ svg {
   left: 45px;
 }
 
-
-
-@media screen and (max-width: 768px) {
+@media  (max-width: 667px) {
+  .page7-cir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+    background-color: #ffffff69;
+  }
+  .page7-cir-inner {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+   
+  }
   .skill {
     width: 160px;
     height: 160px;
-    /* background-color: blueviolet; */
-    /* position: relative; */
+
     padding-left: 0%;
     padding-top: 0%;
-    margin-top: -35%;
-    margin-left: -35%;
+    margin-top: -19%;
+    margin-left: -17%;
   }
 
   .outer {
     height: 160px;
     width: 160px;
     border-radius: 50%;
-    /* border: 1px solid red; */
+    
     padding: 20px;
-    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-      -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
   }
 
   .inner {
@@ -454,15 +469,10 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
-    /* box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05); */
   }
 
   #number {
-    font-weight: 600;
+    font-weight: 900;
     color: #555;
   }
 
@@ -472,7 +482,6 @@ svg {
     stroke-width: 5px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
-    /* animation: prog 20s linear forwards; */
   }
 
   svg {
@@ -480,14 +489,63 @@ svg {
     top: -20px;
     left: -22px;
   }
-
-  /* @keyframes prog{
-      100%{
-          stroke-dashoffset: 165;
-      }
-  } */
 }
 
+/* 
+  @media screen and (max-width: 768px) {
+    .skill {
+      width: 160px;
+      height: 160px;
+      background-color: blueviolet;
+      position: relative;
+      padding-left: 0%;
+      padding-top: 0%;
+      margin-top: -35%;
+      margin-left: -35%;
+    }
+  
+    .outer {
+      height: 160px;
+      width: 160px;
+      border-radius: 50%;
+      border: 1px solid red;
+      padding: 20px;
+      
+    }
+  
+    .inner {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  
+    #number {
+      font-weight: 600;
+      color: #555;
+    }
+  
+    circle {
+      fill: none;
+      stroke: url(#GradientColor);
+      stroke-width: 5px;
+      stroke-dasharray: 472;
+      stroke-dashoffset: 472;
+      
+    }
+  
+    svg {
+      position: absolute;
+      top: -20px;
+      left: -22px;
+    }
+  
+    
+  } */
+/* 
 @media screen and (max-width: 844px) {
   .skill {
     width: 80px;
@@ -548,35 +606,35 @@ svg {
 
 @media screen and (max-width: 915px) {
   .skill {
-    width: 80px;
+    width: 80px; 
     height: 80px;
-    margin-top: 32%;
+    margin-top: 32%; 
     margin-left: 33%;
   }
 
   .outer {
-    height: 120px;
+    height: 120px; 
     width: 120px;
-    padding: 10px;
+    padding: 10px; 
   }
 
   .inner {
-    height: 80px;
+    height: 80px; 
     width: 80px;
   }
 
   #number {
-    font-size: 24px;
+    font-size: 24px; 
   }
 
   circle {
-    stroke-width: 10px;
-    stroke-dasharray: 282;
-    stroke-dashoffset: 282;
+    stroke-width: 10px; 
+    stroke-dasharray: 282; 
+    stroke-dashoffset: 282; 
   }
 
   svg {
-    top: 100px;
+    top: 100px; 
     left: 100px;
   }
 
@@ -602,7 +660,7 @@ svg {
     background-color: #8f37f3;
     border: 1px solid #ffffff;
   }
-}
+} */
 
 #page8 {
   position: relative;
