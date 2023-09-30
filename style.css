@@ -414,7 +414,7 @@ circle {
   stroke-width: 10px;
   stroke-dasharray: 502.65;
   stroke-dashoffset: 472;
-  /* animation: prog 2s linear forwards; */
+  
 }
 
 svg {
@@ -423,11 +423,7 @@ svg {
   left: 45px;
 }
 
-/* @keyframes prog{
-    100%{
-        stroke-dashoffset: 165;
-    }
-} */
+
 
 @media screen and (max-width: 768px) {
   .skill {
@@ -552,35 +548,35 @@ svg {
 
 @media screen and (max-width: 915px) {
   .skill {
-    width: 80px; 
+    width: 80px;
     height: 80px;
-    margin-top: 32%; 
+    margin-top: 32%;
     margin-left: 33%;
   }
 
   .outer {
-    height: 120px; 
+    height: 120px;
     width: 120px;
-    padding: 10px; 
+    padding: 10px;
   }
 
   .inner {
-    height: 80px; 
+    height: 80px;
     width: 80px;
   }
 
   #number {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   circle {
-    stroke-width: 10px; 
-    stroke-dasharray: 282; 
-    stroke-dashoffset: 282; 
+    stroke-width: 10px;
+    stroke-dasharray: 282;
+    stroke-dashoffset: 282;
   }
 
   svg {
-    top: 100px; 
+    top: 100px;
     left: 100px;
   }
 
