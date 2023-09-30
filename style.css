@@ -419,8 +419,8 @@ circle {
 
 svg {
   position: absolute;
-  top: 55px;
-  left: 55px;
+  top: 40px;
+  left: 45px;
 }
 
 /* @keyframes prog{
@@ -437,8 +437,8 @@ svg {
     /* position: relative; */
     padding-left: 0%;
     padding-top: 0%;
-    margin-top: -25%;
-    margin-left: -25%;
+    margin-top: -35%;
+    margin-left: -35%;
   }
 
   .outer {
@@ -481,8 +481,8 @@ svg {
 
   svg {
     position: absolute;
-    top: -12px;
-    left: -13px;
+    top: -20px;
+    left: -22px;
   }
 
   /* @keyframes prog{
@@ -490,6 +490,122 @@ svg {
           stroke-dashoffset: 165;
       }
   } */
+}
+
+@media screen and (max-width: 844px) {
+  .skill {
+    width: 80px;
+    height: 80px;
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+
+  .outer {
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+  }
+
+  .inner {
+    height: 80px;
+    width: 80px;
+  }
+
+  #number {
+    font-size: 24px;
+  }
+
+  circle {
+    stroke-width: 10px;
+    stroke-dasharray: 282;
+    stroke-dashoffset: 282;
+  }
+
+  svg {
+    top: 38px;
+    left: 31px;
+  }
+
+  .page7-cir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    height: 60vw;
+    width: 60vw;
+    border-radius: 50%;
+    background-color: #ffffff69;
+    border: 1px solid #ffffff;
+  }
+  .page7-cir-inner {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: #8f37f3;
+    border: 1px solid #ffffff;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .skill {
+    width: 80px; 
+    height: 80px;
+    margin-top: 32%; 
+    margin-left: 33%;
+  }
+
+  .outer {
+    height: 120px; 
+    width: 120px;
+    padding: 10px; 
+  }
+
+  .inner {
+    height: 80px; 
+    width: 80px;
+  }
+
+  #number {
+    font-size: 24px; 
+  }
+
+  circle {
+    stroke-width: 10px; 
+    stroke-dasharray: 282; 
+    stroke-dashoffset: 282; 
+  }
+
+  svg {
+    top: 100px; 
+    left: 100px;
+  }
+
+  .page7-cir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    height: 60vw;
+    width: 60vw;
+    border-radius: 50%;
+    background-color: #ffffff69;
+    border: 1px solid #ffffff;
+  }
+  .page7-cir-inner {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: #8f37f3;
+    border: 1px solid #ffffff;
+  }
 }
 
 #page8 {
