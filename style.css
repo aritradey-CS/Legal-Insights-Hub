@@ -419,8 +419,8 @@ circle {
 
 svg {
   position: absolute;
-  top: 40px;
-  left: 45px;
+  top: 55px;
+  left: 55px;
 }
 
 @media  (max-width: 667px) {
